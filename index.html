@@ -1,26 +1,30 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
-    <script src="https://d3js.org/d3.v6.min.js"></script>
-    <title>Tree Map</title>
+    <title>CodePen - FCC: D3 Tree Map</title>
   </head>
-  <body>
-    <div class="navbar">
-      <button class="videoGame">Video Game Data Set</button>
-      <button class="movie">Movies Data Set</button>
-      <button class="kickstarter">Kickstarter Data Set</button>
+
+  <body translate="no">
+    <br />
+    <a href="?data=videogames">Video Game Data Set</a> |
+    <a href="?data=movies">Movies Data Set</a> |
+    <a href="?data=kickstarter">Kickstarter Data Set</a>
+    <h1 id="title">Video Game Sales</h1>
+    <div id="description">
+      Top 100 Most Sold Video Games Grouped by Platform
     </div>
-    <div class="heading">
-      <h1 id="title">Video Game Sales</h1>
-      <h3 id="description">
-        Top 100 Most Sold Video Games Grouped by Platform
-      </h3>
-    </div>
+    <svg id="tree-map" width="960" height="570"></svg>
+    <svg id="legend" width="500"></svg>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div
+      id="fcc_test_suite_wrapper"
+      style="position: relative !important; z-index: 99999 !important"
+    ></div>
   </body>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <script src="script.js"></script>
 </html>
